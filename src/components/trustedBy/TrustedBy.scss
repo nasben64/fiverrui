@@ -1,0 +1,21 @@
+@use "../../base";
+
+.trustedBy {
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+  height: 100px;
+  .container {
+    width: 760px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: base.$primary_2;
+
+    img {
+      width: 50px;
+      object-fit: contain;
+    }
+  }
+}

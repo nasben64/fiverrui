@@ -1,0 +1,64 @@
+@use "../../base";
+
+.orders {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1400px;
+    padding: 50px 0px;
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      button {
+        background-color: base.$primary_1;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+
+    table {
+      width: 100%;
+
+      .header {
+        background-color: base.$primary_2;
+        color: #000;
+        font-weight: 500;
+      }
+
+      tr {
+        height: 50px;
+
+        th {
+          text-align: left;
+          padding-left: 10px;
+        }
+
+        td {
+          padding-left: 10px;
+          .img {
+            width: 50px;
+            height: 25px;
+            object-fit: cover;
+          }
+
+          .delete {
+            width: 20px;
+            cursor: pointer;
+          }
+        }
+
+        &:nth-child(even) {
+          background-color: #a3dbbff2;
+        }
+      }
+    }
+  }
+}
